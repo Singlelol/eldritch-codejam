@@ -1,13 +1,6 @@
-import azathoth from './Azathoth.png';
-import cthulhu from './Cthulthu.png';
-import iogSothoth from './IogSothoth.png';
-import shubNiggurath from './ShubNiggurath.png';
-
-const ancients = {
-  azathoth,
-  cthulhu,
-  iogSothoth,
-  shubNiggurath
-}
+const ancients = [ "./assets/Ancients/Azathoth.png",
+'./assets/Ancients/Cthulthu.png',
+'./assets/Ancients/IogSothoth.png',
+'./assets/Ancients/ShubNiggurath.png']
 
 export default ancients
