@@ -1,8 +1,6 @@
 import { difficulties } from "./data/difficulties.js";
 import { ancientsData } from './data/ancients.js';
-import { brownCards, blueCards, greenCards } from './data/mythicCards/index.js';
-
-console.log(ancientsData[0]);
+import { brownCards, blueCards, greenCards } from './data/cards.js';
 
 let name = {
     greenCards: 0,
@@ -13,8 +11,9 @@ let name = {
   function search(arrs, elem) {
     const colorElem = elem;
     for (let prop in arrs) {
-    typeof arrs[prop] === "object" ? search(arrs[prop], colorElem) : green
-    if (prop.includes(colorElem)) {
+    if (typeof arrs[prop] === "object") {
+      search(arrs[prop], colorElem)
+    } else if (prop.includes(colorElem)) {
       return name[colorElem] = name[colorElem] + arrs[prop]}
     }
   return name[colorElem]
@@ -26,11 +25,12 @@ let name = {
       };
   }
 
-  let deck = [];
-let cardsAmount = new Array(...cardsData);
+//countCard();
 
-for (let key in name) {
-  
+let deck = [];
+
+for (let key in name) { 
+  let cardsAmount = new Array(...greenCards, ...blueCards, brownCards);
   function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -44,7 +44,4 @@ function drawCard(name, number) {
   return deck;
 }
 drawCard(key, name[key]);
-  
 }
-
-console.log(greenCard);
