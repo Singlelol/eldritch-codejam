@@ -30,7 +30,7 @@ let name = {
 let deck = [];
 
 for (let key in name) { 
-  let cardsAmount = new Array(...greenCards, ...blueCards, brownCards).filter(element => element.color == 'blue');
+  let cardsAmount = new Array(...greenCards, ...blueCards, brownCards).filter(element => element.color === key.slice(0, -5));
   function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
