@@ -73,11 +73,163 @@ input {
     cursor: pointer;
 }
 
+.none {
+    display: none;
+}
+
 .gameland {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background: center center no-repeat url('../assets/home.png');
     background-size: cover;
+}
+
+.gameland__immortal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    width: 30%;
+    min-width: 320px;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.gameland__immortal-item {
+    min-width: 170px;
+    min-height: 220px;
+    height: fit-content;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.azathoth {
+    background-image: url('../assets/Ancients/Azathoth.png');
+}
+
+.cthulhu {
+    background-image: url('../assets/Ancients/Cthulthu.png');
+}
+
+.iogSothoth {
+    background-image: url('../assets/Ancients/IogSothoth.png');
+}
+
+.shubNiggurath {
+    background-image: url('../assets/Ancients/ShubNiggurath.png');
+}
+
+.gameland__level {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 30%;
+    min-width: 320px;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.gameland__level-start {
+    padding: 10px 20px;
+    border: #fff 2px solid;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    cursor: pointer;
+}
+
+.gameland__level-items {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gameland__level-item {
+    padding: 10px 20px;
+    border: #fff 2px solid;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    cursor: pointer;
+}
+
+.gameland__playCards {
+    width: 30%;
+    min-width: 320px;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.gameland__playCards-stages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    gap: 15px;
+}
+
+.gameland__playCards-stage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.gameland__playCards-stage-header {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.gameland__playCards-stage-numbers {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gameland__playCards-stage-number {
+    min-width: 20px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.green {
+    background-color: darkgreen;
+}
+
+.yellow {
+    background-color: goldenrod;
+}
+
+.blue {
+    background-color: dodgerblue;
+}
+
+.gameland__playCards-deck {
+    min-width: 150px;
+    min-height: 220px;
+    height: fit-content;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-image: url('../assets/mythicCardBackground.png');
+}
+
+.gameland__playCards-card {
+    min-width: 150px;
+    min-height: 220px;
+    height: fit-content;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
