@@ -1,6 +1,6 @@
 import { difficulties } from "./data/difficulties.js";
 import { ancientsData } from './data/ancients.js';
-import { brownCards, blueCards, greenCards } from './data/cards.js';
+import { brownCards, blueCards, greenCards, cardsBlue, cardsGreen, cardsBroun } from './data/cards.js';
 
 let name = {
     greenCards: 0,
@@ -30,12 +30,12 @@ let name = {
 let deck = [];
 
 for (let key in name) { 
-  let cardsAmount = new Array(...greenCards, ...blueCards, brownCards).filter(element => element.color === key.slice(0, -5));
+  let cardsAmount = [...greenCards, ...blueCards, ...brownCards].filter(element => element.color === key.slice(0, -5));
   function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function drawCard(name, number) {
+function drawCard(number) {
   let arr = [];
   for (let i = 0; i < number; i++) {
     arr[i] = cardsAmount.splice(random(0, cardsAmount.length - 1), 1)
@@ -43,5 +43,9 @@ function drawCard(name, number) {
   deck.push(arr)
   return deck;
 }
-drawCard(key, name[key]);
+drawCard(name[key]);
 }
+
+let firstStage = [ancientsData[0].firstStage.greenCards, ancientsData[0].firstStage.blueCards, ancientsData[0].firstStage.brownCards]
+let secondStage = [ancientsData[0].secondStage.greenCards, ancientsData[0].secondStage.blueCards, ancientsData[0].secondStage.brownCards]
+let thirdStage = [ancientsData[0].thirdStage.greenCards, ancientsData[0].thirdStage.blueCards, ancientsData[0].thirdStage.brownCards]

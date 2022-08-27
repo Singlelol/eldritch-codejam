@@ -1,13 +1,8 @@
-const ancients = [ "./assets/Ancients/Azathoth.png",
-'./assets/Ancients/Cthulthu.png',
-'./assets/Ancients/IogSothoth.png',
-'./assets/Ancients/ShubNiggurath.png']
-
 const ancientsData = [
   {
     id: 'azathoth',
     name: 'azathoth',
-    cardFace: ancients.azathoth,
+    cardFace: "./assets/Ancients/Azathoth.png",
     firstStage: {
       greenCards: 1,
       blueCards: 1,
@@ -27,7 +22,7 @@ const ancientsData = [
   {
     id: 'cthulhu',
     name: 'cthulhu',
-    cardFace: ancients.cthulhu,
+    cardFace: './assets/Ancients/Cthulthu.png',
     firstStage: {
       greenCards: 0,
       blueCards: 2,
@@ -47,7 +42,7 @@ const ancientsData = [
   {
     id: 'iogSothoth',
     name: 'iogSothoth',
-    cardFace: ancients.iogSothoth,
+    cardFace: './assets/Ancients/IogSothoth.png',
     firstStage: {
       greenCards: 0,
       blueCards: 1,
@@ -67,7 +62,7 @@ const ancientsData = [
   {
     id: 'shubNiggurath',
     name: 'shubNiggurath',
-    cardFace: ancients.shubNiggurath,
+    cardFace: './assets/Ancients/ShubNiggurath.png',
     firstStage: {
       greenCards: 1,
       blueCards: 1,
