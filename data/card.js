@@ -376,7 +376,7 @@ const greenCards = [
   export {
     cardsBlue,
     cardsGreen,
-    cardsGreen,
+    cardsBroun,
     brownCards,
     blueCards,
     greenCards
