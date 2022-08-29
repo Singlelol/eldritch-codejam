@@ -172,5 +172,10 @@ if (rollCard[0][index].length > 0) {
 }
 
 backCard.addEventListener('click', ()=>{
-  frontCard.style.backgroundImage = `url(${pullCard()})`;
+  const img = new Image();
+  const url = pullCard();
+  img.src = url;
+  img.onload = () => {
+    frontCard.style.backgroundImage = `url('${img.src}')`;
+  };
 })
