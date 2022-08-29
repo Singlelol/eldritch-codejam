@@ -82,7 +82,6 @@ input {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100vw;
-    height: 100vh;
     padding-top: 20px;
     padding-bottom: 20px;
     background: center center no-repeat url('../assets/home.jpg');
